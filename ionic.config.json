@@ -1,0 +1,7 @@
+{
+  "name": "employees",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react-vite"
+}
