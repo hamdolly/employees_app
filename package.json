@@ -12,7 +12,9 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@capacitor/android": "^7.0.1",
     "@capacitor/app": "7.0.0",
+    "@capacitor/clipboard": "^7.0.0",
     "@capacitor/core": "7.0.1",
     "@capacitor/haptics": "7.0.0",
     "@capacitor/keyboard": "7.0.0",
@@ -21,11 +23,15 @@
     "@ionic/react-router": "^8.0.0",
     "@types/react-router": "^5.1.20",
     "@types/react-router-dom": "^5.3.3",
+    "axios": "^1.7.9",
+    "copy-to-clipboard": "^3.3.3",
     "ionicons": "^7.0.0",
     "react": "^18.2.0",
+    "react-copy-to-clipboard": "^5.1.0",
     "react-dom": "^18.2.0",
     "react-router": "^5.3.4",
-    "react-router-dom": "^5.3.4"
+    "react-router-dom": "^5.3.4",
+    "styled-components": "^6.1.15"
   },
   "devDependencies": {
     "@capacitor/cli": "7.0.1",

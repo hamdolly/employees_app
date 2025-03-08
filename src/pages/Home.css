@@ -1,0 +1,9 @@
+.test {
+    color: red;
+}
+
+ion-padding {
+    padding-top: 50px;
+    color: red;
+    display: none;
+}

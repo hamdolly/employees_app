@@ -32,20 +32,71 @@ import '@ionic/react/css/palettes/dark.system.css';
 
 /* Theme variables */
 import './theme/variables.css';
+import Start from './pages/Start/Start';
+import AddNewEmployee from './pages/AddNewEmployee/AddNewEmployee';
+import Attendance from './pages/Attendance/Attendance';
+import Template from './pages/Attendance/Template';
+import SelectShift from './pages/Attendance/SelectShift';
+import ShiftTime from './pages/Attendance/ShiftTime';
 
 setupIonicReact();
 
 const App: React.FC = () => (
   <IonApp>
     <IonReactRouter>
+
       <IonRouterOutlet>
+
         <Route exact path="/home">
           <Home />
         </Route>
+
         <Route exact path="/">
           <Redirect to="/home" />
         </Route>
+
+        <Route exact path="/start">
+          <Start />
+        </Route>
+
+        <Route exact path="/new-employee">
+          <AddNewEmployee />
+        </Route>
+
+        <Route exact path="/attendance1/:shift">
+        <Attendance shift={1} />
+        </Route>
+
+        <Route exact path="/attendance2/:shift">
+          <Attendance shift={2} />
+        </Route>
+
+        <Route exact path="/attendance3/:shift">
+        <Attendance shift={3} />
+        </Route>
+
+        <Route exact path="/attendance4/:shift">
+        <Attendance shift={4} />
+        </Route>
+
+        <Route exact path="/attendance5/:shift">
+        <Attendance shift={5} />
+        </Route>
+
+        <Route exact path="/attendance/template/:data">
+          <Template />
+        </Route>
+
+        <Route exact path="/select/shift">
+          <SelectShift />
+        </Route>
+
+        <Route exact path="/select/shift/time/:time">
+          <ShiftTime />
+        </Route>
+
       </IonRouterOutlet>
+
     </IonReactRouter>
   </IonApp>
 );
